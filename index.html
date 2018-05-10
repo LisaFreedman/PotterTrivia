@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Zoey's Trivia Game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto+Condensed" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 pageheader">
+                <h1>Zoey's Very Own Trivia Game.</h1>
+                <p id="subHeader">A Harry Potter Trivia Game</p>
+            </div>
+            <div class="col-sm-5"></div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-sm-12 startScreen">
+                <p id="instructions">Try to answer ten questions correctly
+                    <br>in sixty seconds or less.</p>
+                <button type="button" class="btn btn-info btn-lg buttonstyle startbutton">Get Started!</button>
+            </div>
+        </div>
+        <div class="row theTimer">
+            <div class="col-sm-6">
+                <p style="font-size: 50px;">Time Left:&nbsp<span id="show-number"></span></p>
+            </div>
+            <div class="col-sm-6"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-9 questionColumn">
+                <form>
+                    <p>Question 1:  How does Harry manage to breathe underwater during the second task of the Triwizard Tournament? </p>
+                    <input type="radio" name="question1" value="He transforms into a shark"> He transforms into a shark
+                    <br>
+                    <input type="radio" name="question1" value="He eats Gillyweed"> He eats Gillyweed
+                    <br>
+                    <input type="radio" name="question1" value="He performs a bubblehead charm"> He performs a bubblehead charm
+                    <br>
+                    <br>
+                    <p>Question 2: What is the name of Fred and George's joke shop?</p>
+                    <input type="radio" name="question2" value="center of the earth"> Weasley Wizard Wheezes
+                    <br>
+                    <input type="radio" name="question2" value="surface of the sun"> Fred and George's Wonder Emporium
+                    <br>
+                    <input type="radio" name="question2" value="both are the same temperature"> Zonko's Joke Shop
+                    <br>
+                    <br>
+                    <p>Question 3:Which of these is NOT one of the Unforgivable Curses?</p>
+                    <input type="radio" name="question3" value="New Zealand"> Cruciatus Curse
+                    <br>
+                    <input type="radio" name="question3" value="Australia"> Imperius Curse
+                    <br>
+                    <input type="radio" name="question3" value="Japan"> Sectum Sempra
+                    <br>
+                    <br>
+                    <p>Who played Lord Voldemort in the movies?</p>
+                    <input type="radio" name="question4" value="Arabian"> Ralph Fiennes
+                    <br>
+                    <input type="radio" name="question4" value="Kalahari"> Jeremy Irons
+                    <br>
+                    <input type="radio" name="question4" value="Sahara"> Daniel Radcliffe
+                    <br>
+                    <br>
+                    <p>What does Ron see in the Mirror of Erised?</p>
+                    <input type="radio" name="question5" value="nitrogen"> Himself, as holding the Quiditch Cup
+                    <br>
+                    <input type="radio" name="question5" value="oxygen"> Himself, kissing Harry
+                    <br>
+                    <input type="radio" name="question5" value="helium"> Himself, kissing Hermione
+                    <br>
+                    <br>
+                    <p>Question 6: Who played Ron Weasley in the movies?</p>
+                    <input type="radio" name="question6" value="10%"> Daniel Radcliffe
+                    <br>
+                    <input type="radio" name="question6" value="20%"> Justin Bieber
+                    <br>
+                    <input type="radio" name="question6" value="30%"> Rupert Grint
+                    <br>
+                    <br>
+                    <p>Question 7: Who is NOT a member of the Order of the Phoenix?</p>
+                    <input type="radio" name="question7" value="India"> Cornelius Fudge
+                    <br>
+                    <input type="radio" name="question7" value="China"> Professor Snape
+                    <br>
+                    <input type="radio" name="question7" value="USA"> Remus Lupin
+                    <br>
+                    <br>
+                    <p>Question 8: What does O.W.L. stand for?</p>
+                    <input type="radio" name="question8" value="Ordinary Wizarding Level"> Ordinary Wizarding Level
+                    <br>
+                    <input type="radio" name="question8" value="Denali"> Outstanding Wizarding Level
+                    <br>
+                    <input type="radio" name="question8" value="Glacier Bay"> Outstanding Wonderful Luck
+                    <br>
+                    <br>
+                    <p>Question 9: A wizard who cannot do magic is known as a:</p>
+                    <input type="radio" name="question9" value="Antartica"> Mortal
+                    <br>
+                    <input type="radio" name="question9" value="Australia"> Duddle
+                    <br>
+                    <input type="radio" name="question9" value="Europe"> Squib
+                    <br>
+                    <br>
+                    <p>Question 10: What does the spell "Obliviate" do?</p>
+                    <input type="radio" name="question10" value="December"> Breaks objects
+                    <br>
+                    <input type="radio" name="question10" value="May"> Sends someone to the nether realm
+                    <br>
+                    <input type="radio" name="question10" value="January"> Removes parts of someone's memory
+                    <br>
+                </form>
+                <br>
+                <button type="button" class="btn btn-info btn-lg finish">Finish
+            </div>
+            <!-- <div class="col-sm-3"></div> -->
+        </div>
+        <div class="row FinishScreen">
+            <div class="col-sm-9">
+                <p>Time's Up! Your final score:</p>
+                <p>Correct Responses:&nbsp<span id="rightResponses"></span></p>
+                <p>Incorrect Responses:&nbsp<span id="wrongResponses"></span></p>
+                <br><br>
+                <p>Here are the Correct Answers:<br>
+                Question 1: How does Harry manage to breathe underwater during the second task of the Triwizard Tournament?<br>
+                Answer: He eats Gillyweed<br><br>
+                Question 2: What is the name of Fred and George's joke shop?<br>
+                Answer: Weasley Wizard Wheezes<br><br>
+                Question 3: Which of these is NOT one of the Unforgivable Curses?<br>
+                Answer: Sectum Sempra<br><br>
+                Question 4: Who played Lord Voldemort in the movies?<br>
+                Answer: Ralph Fiennes<br><br>
+                Question 5: What does Ron see in the Mirror of Erised?<br>
+                Answer: Himself, holding the Quiditch Cup<br><br>
+                Question 6: Who played Ron Weasley in the movies?<br>
+                Answer: Rupert Grint<br><br>
+                Question 7: Who is NOT a member of the Order of the Phoenix?<br>
+                Answer: Cornelius Fudge<br><br>
+                Question 8: What does O.W.L. stand for?<br>
+                Answer: Outstanding Wizarding Level<br><br>
+                Question 9: A wizard who cannot do magic is known as a:<br>
+                Answer: Squib<br><br>
+                Question 10: What does the spell "Obliviate" do?<br>
+                Answer: Removes parts of someone's memory<br>
+                </p>
+
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+    <!-- jQuery Link -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <!-- Javascript Link -->
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
