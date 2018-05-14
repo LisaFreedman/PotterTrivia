@@ -1,16 +1,4 @@
-//                      /$$                 /$$       /$$                                 /$$             /$$    
-//                     | $$                | $$      | $$                                | $$            | $$    
-//   /$$$$$$   /$$$$$$ | $$  /$$$$$$       | $$$$$$$ | $$ /$$   /$$  /$$$$$$         /$$$$$$$  /$$$$$$  /$$$$$$  
-//  /$$__  $$ |____  $$| $$ /$$__  $$      | $$__  $$| $$| $$  | $$ /$$__  $$       /$$__  $$ /$$__  $$|_  $$_/  
-// | $$  \ $$  /$$$$$$$| $$| $$$$$$$$      | $$  \ $$| $$| $$  | $$| $$$$$$$$      | $$  | $$| $$  \ $$  | $$    
-// | $$  | $$ /$$__  $$| $$| $$_____/      | $$  | $$| $$| $$  | $$| $$_____/      | $$  | $$| $$  | $$  | $$ /$$
-// | $$$$$$$/|  $$$$$$$| $$|  $$$$$$$      | $$$$$$$/| $$|  $$$$$$/|  $$$$$$$      |  $$$$$$$|  $$$$$$/  |  $$$$/
-// | $$____/  \_______/|__/ \_______/      |_______/ |__/ \______/  \_______/       \_______/ \______/    \___/  
-// | $$                                                                                                          
-// | $$                                                                                                          
-// |__/ 
 
-// Jquery function to wrap everything
 // -----------------------------------------------------------------
 $(document).ready(function() {
 
@@ -30,8 +18,10 @@ $(document).ready(function() {
         // user's response collected in an array
     var responseArray = []
         // Correct Answer Array
-    var answerArray = ["Pacific Ocean", "center of the earth", "Australia", "Sahara", "nitrogen", "20%", "USA", "Wrangell-St. Elias", "Australia", "January"]
+      
+    var answerArray = ["He eats Gillyweed", "Weasley Wizard Wheezes", "Sectum Sempra", "Ralph Fiennes", "Himself, holding the Quiditch Cup", "Rupert Grint", "Cornelius Fudge", "Outstanding Wizarding Level", "Squib", "Removes parts of someone's memory"]
     console.log(answerArray)
+
 
     // Elements will fade into the page upon load
     $(".pageheader").hide();
