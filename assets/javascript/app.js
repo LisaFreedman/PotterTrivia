@@ -6,7 +6,7 @@ $(document).ready(function() {
     // -------------------------------------------------------------
 
     // Stop Clock 
-    var counter = 61;
+    var counter = 361;
     // used for stop clock interval
     var intervalId;
     // Used to display the question number
